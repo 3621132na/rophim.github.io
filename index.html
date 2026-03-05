@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPhim - Thế Giới Phim Miễn Phí</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h2 class="logo" onclick="changePage(1, 'home')">🎬 OPHIM</h2>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Tìm tên phim...">
+            <button onclick="changePage(1, 'search')">Tìm</button>
+        </div>
+
+        <div class="filters">
+            <select id="genreFilter" onchange="changePage(1, 'genre')">
+                <option value="">Thể loại</option>
+            </select>
+            <select id="countryFilter" onchange="changePage(1, 'country')">
+                <option value="">Quốc gia</option>
+            </select>
+            <select id="yearFilter" onchange="changePage(1, 'year')">
+                <option value="">Năm</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div id="content">
+        <div class="loading">Đang tải phim vui lòng chờ...</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 OPhim App - Dữ liệu từ OPhim API</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
